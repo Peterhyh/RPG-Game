@@ -1,11 +1,13 @@
-from turtle import *
+import pygame
 
-screen = Screen()
-screen.setup(width=700, height=700)
-screen.bgcolor("lightgreen")
+display = pygame.display
 
-player = Turtle()
-player.color("blue")
-player.shape("triangle")
+pygame.init()
+screen = display.set_mode((800, 400))
 
-screen.exitonclick()
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+    display.update()
