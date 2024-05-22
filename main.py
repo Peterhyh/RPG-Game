@@ -5,11 +5,14 @@ pygame.init()
 display = pygame.display
 clock = pygame.time.Clock()
 
-screen = display.set_mode((800, 400))
+screen = display.set_mode((1404, 716))
 display.set_caption("Forbidden Dynasty")
 
-surface = pygame.Surface((100, 200))
-surface.fill("Red")
+background_surface = pygame.image.load("images/background.png")
+character_surface = pygame.image.load("images/blob.png")
+
+# surface = pygame.Surface((100, 200))
+# surface.fill("Red")
 
 while True:
     for event in pygame.event.get():
@@ -17,6 +20,8 @@ while True:
             pygame.quit()
             exit()
 
-    screen.blit(surface, (200, 100))
+    # screen.blit(surface, (200, 100))
+    screen.blit(background_surface, (0, 0))
+    screen.blit(character_surface, (100, 475))
     display.update()
     clock.tick(60)
