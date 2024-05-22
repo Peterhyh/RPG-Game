@@ -17,6 +17,6 @@ while True:
             pygame.quit()
             exit()
 
-    screen.blit(surface, (0, 0))
+    screen.blit(surface, (200, 100))
     display.update()
     clock.tick(60)
