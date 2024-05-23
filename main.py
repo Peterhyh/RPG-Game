@@ -21,7 +21,6 @@ attack_blob_right_surface_rect = attack_blob_right_surface.get_rect(
 
 moveLeft = True
 
-
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
