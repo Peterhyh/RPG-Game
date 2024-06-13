@@ -6,7 +6,7 @@ display = pygame.display
 clock = pygame.time.Clock()
 
 screen = display.set_mode((1404, 716))
-display.set_caption("Dynasty")
+display.set_caption("Forbidden Dynasty")
 
 background_surface = pygame.image.load("images/background.png").convert()
 character_surface = pygame.image.load("images/blob.png").convert_alpha()
